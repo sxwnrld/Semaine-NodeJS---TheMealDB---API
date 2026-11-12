@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recettes - TheMealDB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Recettes</h1>
+    <p>Petit front pour tester l'API</p>
+  </header>
+
+  <main>
+    <form id="form-recherche">
+      <input type="text" id="input-nom" placeholder="Nom de la recette (ex : chicken)">
+      <select id="select-categorie">
+        <option value="">Toutes les catégories</option>
+      </select>
+      <button type="submit">Rechercher</button>
+      <button type="button" id="btn-hasard">Au hasard</button>
+    </form>
+
+    <p id="message"></p>
+
+    <section id="resultats"></section>
+
+    <div id="pagination">
+      <button id="btn-precedent">Précédent</button>
+      <span id="num-page"></span>
+      <button id="btn-suivant">Suivant</button>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

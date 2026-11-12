@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f1ec;
+  color: #222;
+}
+
+header {
+  background: #c0392b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 5px 0 0;
+  opacity: 0.8;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+input {
+  flex: 1;
+  min-width: 200px;
+}
+
+button {
+  background: #c0392b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #a93226;
+}
+
+button:disabled {
+  background: #bbb;
+  cursor: default;
+}
+
+#resultats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.carte {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.carte img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.carte .contenu {
+  padding: 10px;
+}
+
+.carte h2 {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+
+.carte p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.carte ul {
+  font-size: 13px;
+  padding-left: 18px;
+  margin: 8px 0 0;
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
